@@ -34,6 +34,10 @@ const Feed = () => {
       <Spinner message={`We are adding ${ideaName} ideas to your feed!`} />
     );
   }
+
+  if(!pins?.length) {
+      return (<h2 className="text-center">Todavía nadie ha subido nada aquí...¡Estrena esta categoría!</h2>);
+  }
   return (
     <div>
       {pins && (
