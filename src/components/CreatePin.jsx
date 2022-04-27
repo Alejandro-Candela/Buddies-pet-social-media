@@ -99,11 +99,11 @@ const CreatePin = ({ user }) => {
                     <p className="font-bold text-2xl">
                       <AiOutlineCloudUpload />
                     </p>
-                    <p className="text-lg">Click to upload</p>
+                    <p className="text-lg">Click para subir</p>
                   </div>
 
-                  <p className="mt-32 text-gray-400">
-                    Recommendation: Use high-quality JPG, JPEG, SVG, PNG, GIF or TIFF less than 20MB
+                  <p className="mt-32 text-gray-400 text-center">
+                    Se recomienda alta calidad en JPG, JPEG, SVG, PNG, GIF o TIFF, y menos de 20 MB
                   </p>
                 </div>
                 <input
@@ -137,7 +137,7 @@ const CreatePin = ({ user }) => {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Add your title"
+            placeholder="Ponle un título"
             className="outline-none text-2xl sm:text-3xl font-bold border-b-2 border-gray-200 p-2"
           />
           {user && (
@@ -154,27 +154,27 @@ const CreatePin = ({ user }) => {
             type="text"
             value={about}
             onChange={(e) => setAbout(e.target.value)}
-            placeholder="Tell everyone what your Pin is about"
+            placeholder="Háblanos un poco de tu buddie"
             className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
           />
           <input
             type="url"
             vlaue={destination}
             onChange={(e) => setDestination(e.target.value)}
-            placeholder="Add a destination link"
+            placeholder="¿Tienes un link de destino? (opcional)"
             className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
           />
 
           <div className="flex flex-col">
             <div>
-              <p className="mb-2 font-semibold text:lg sm:text-xl">Choose Pin Category</p>
+              <p className="mb-2 font-semibold text:lg sm:text-xl">Eilge una categoría</p>
               <select
                 onChange={(e) => {
                   setCategory(e.target.value);
                 }}
                 className="outline-none w-4/5 text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
               >
-                <option value="others" className="sm:text-bg bg-white">Select Category</option>
+                <option value="others" className="sm:text-bg bg-white">¿Qué animal es?</option>
                 {categories.map((item) => (
                   <option className="text-base border-0 outline-none capitalize bg-white text-black " value={item.name}>
                     {item.name}
@@ -188,7 +188,7 @@ const CreatePin = ({ user }) => {
                 onClick={savePin}
                 className="bg-red-500 text-white font-bold p-2 rounded-full w-28 outline-none"
               >
-                Save Pin
+                Subir
               </button>
             </div>
           </div>

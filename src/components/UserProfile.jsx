@@ -100,7 +100,7 @@ const UserProfile = () => {
             }}
             className={`${activeBtn === 'created' ? activeBtnStyles : notActiveBtnStyles}`}
           >
-            Created
+            Subidas
           </button>
           <button
             type="button"
@@ -110,7 +110,7 @@ const UserProfile = () => {
             }}
             className={`${activeBtn === 'saved' ? activeBtnStyles : notActiveBtnStyles}`}
           >
-            Saved
+            Guardadas
           </button>
         </div>
 
@@ -120,7 +120,7 @@ const UserProfile = () => {
 
         {pins?.length === 0 && (
         <div className="flex justify-center font-bold items-center w-full text-1xl mt-2">
-          No Pins Found!
+          No se han encontrado buddies!
         </div>
         )}
       </div>
