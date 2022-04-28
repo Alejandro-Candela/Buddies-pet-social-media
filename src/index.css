@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Coming+Soon&family=Gloria+Hallelujah&display=swap');
+
 @layer base {
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .sidebar{
+    background-color: #D6ECFF !important;
+  }
+
+  .home{
+    background-color: #EAF6FF;
+  }
+
+  button{
+    background-color: #FFA69E !important;
+  }
+
+  .login{
+    background-color: #EAF6FF !important;
   }
 }
 

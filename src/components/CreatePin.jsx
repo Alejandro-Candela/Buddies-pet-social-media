@@ -154,7 +154,7 @@ const CreatePin = ({ user }) => {
             type="text"
             value={about}
             onChange={(e) => setAbout(e.target.value)}
-            placeholder="Háblanos un poco de tu buddie"
+            placeholder="Háblanos un poco de tu buddy"
             className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
           />
           <input

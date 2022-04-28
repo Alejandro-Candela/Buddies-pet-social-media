@@ -1,32 +1,28 @@
 export const categories = [
     {
       name: 'perros',
-      image: 'https://i.pinimg.com/750x/eb/47/44/eb4744eaa3b3ccd89749fa3470e2b0de.jpg',
+      image: 'https://i.imgur.com/TmMxjYS.png',
     },
     {
       name: 'gatos',
-      image: 'https://i.pinimg.com/236x/25/14/29/251429345940a47490cc3d47dfe0a8eb.jpg',
+      image: 'https://i.imgur.com/ZO9vXm5.png',
     },
     {
       name: 'aves',
-      image: 'https://i.pinimg.com/236x/03/48/b6/0348b65919fcbe1e4f559dc4feb0ee13.jpg',
+      image: 'https://i.imgur.com/CTGdGOl.png',
     },
     {
       name: 'roedores',
-      image: 'https://i.pinimg.com/750x/66/b1/29/66b1296d36598122e6a4c5452b5a7149.jpg',
+      image: 'https://i.imgur.com/v5btodk.png',
     },
     {
       name: 'conejos',
-      image: 'https://i.pinimg.com/236x/72/8c/b4/728cb43f48ca762a75da645c121e5c57.jpg',
+      image: 'https://i.imgur.com/JBIYCaS.png',
     },
     {
       name: 'peces',
-      image: 'https://i.pinimg.com/236x/7d/ef/15/7def15ac734837346dac01fad598fc87.jpg',
-    },
-    {
-      name: 'cerdos',
-      image: 'https://i.pinimg.com/236x/7d/ef/15/7def15ac734837346dac01fad598fc87.jpg',
-    },
+      image: 'https://i.imgur.com/LZ9sLUR.png',
+    }
   ];
   
   export const feedQuery = `*[_type == "pin"] | order(_createdAt desc) {
