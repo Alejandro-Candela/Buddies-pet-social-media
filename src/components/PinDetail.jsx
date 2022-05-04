@@ -141,7 +141,7 @@ const PinDetail = ({ user }) => {
       {pins ? (
         <MasonryLayout pins={pins} />
       ) : (
-        <Spinner message="Loading more pins" />
+        <Spinner message="Cargando buddies que mostrarte..." />
       )}
     </>
   );
