@@ -21,7 +21,8 @@ const CreatePin = ({ user }) => {
 
   const uploadImage = (e) => {
     const selectedFile = e.target.files[0];
-    // uploading asset to sanity
+
+    // subir imagen a la base de datos
     if (selectedFile.type === 'image/png' || selectedFile.type === 'image/svg' || selectedFile.type === 'image/jpeg' || selectedFile.type === 'image/gif' || selectedFile.type === 'image/tiff') {
       setWrongImageType(false);
       setLoading(true);
@@ -40,6 +41,7 @@ const CreatePin = ({ user }) => {
     }
   };
 
+  // guardar pin
   const savePin = () => {
     if (title && about && imageAsset?._id && category) {
       const doc = {
